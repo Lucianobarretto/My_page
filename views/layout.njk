@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% block head %}
+            <title>Luciano Barreto</title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+    <body>
+        <div class="background">
+            <div>
+                <img class=parts src="/assets/foto.svg" alt="Foto">
+            </div>
+            <div>
+                <header>
+                    <div class="links">
+                        <a href="/" class="active">Sobre</a>
+                        <a href="/portifolio">Portifólio</a>
+                        <a href="/certificate">Certificações</a>
+                    </div>
+                </header>
+                <div class="perfil">
+                    <p>- Olá, eu sou o Luciano Barreto, desenvolvedor fullstack, tenho 40 anos, sou casado e professo a fé cristã, iniciei em 1992 o contato com o mundo tecnológico, ano este que marcou o fim da "Era Spectrum", os MSX's, o sistema DOS e o início da internet à sua feição atual, logo o desejo de aprender cada vez mais me impulsionou a fazer meu primeiro curso de habilitação profissional, tendo o contato com os pré-históricos Intel 286, 386...</p><br>
+                    <p>- Em 1999, após a conclusão do curso Técnico Desenvolvedor de Sistemas, tive contato com as linguagens de programação mais modernas da época, assim mergulhei na área da tecnologia que percorreu o contato direto até o ano de 2008.</p><br>
+                    <p>- Em 2019, depois de mudar para o ABC paulista, iniciei uma reciclagem, ingressei no curso bacharelado Ciências da Computação pela Universidade Anhembi Morumbi, entre outros paralelos à graduação, a de se mencionar os cursos desenvolvidos pela Unicamp, UC Davis (California US), Senai, Rocketseat, Digital Innovation One, LinkedIn Learning...</p><br>
+                    <p>- Mesmo tendo conhecimento em outras tecnologias, atualmente meu foco está nas linguagens JavaScript, NodeJS, ReactJS, React Native e Java (Android).</p>
+                </div>
+            </div>
+            <div>
+                <img class=logo src="/assets/logo.svg" alt="Logomarca">
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.bibliaonline.com.br/nvi/dt/32/4" target="blank">Deus é Fiel</a>
+        </footer>
+
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
