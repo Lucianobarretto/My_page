@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+    --color-logo_yellow: #f5e640;
+    --color-logo_black: #000000;
+    --color-background_matteblack: #1a1920;
+    --color-gray: #8b8a8d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background: var(--color-background_matteblack);
+    background: url(pictures/MountainsOpacity.png) 100% / cover fixed, var(--color-background_matteblack);
+    font-family: 'Lato', sans-serif;
+}
+
+.background {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.parts {
+    width: 120%;
+}
+
+.logo {
+    float: right;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 20px;
+}
+
+.links a {
+    color: var(--color-gray);
+    text-decoration: none;
+    position: relative;
+}
+
+.links a + a {
+    margin-left: 30px;
+}
+
+/* .links a.active {
+    color: var(--color-logo_yellow);
+} */
+
+.links a:hover {
+    color: var(--color-logo_yellow);
+    transition: 500ms;
+}
+
+.links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-logo_yellow);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 700ms ease-in-out;
+}
+
+.perfil {
+    color: var(--color-gray);
+    margin-top: 30px;
+    text-align: justify;
+}
+
+footer a {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--color-gray);
+    text-decoration: none;
+    float: right;
+    margin-top: 185px;
+    margin-right: 20px;
+}
+
+footer a:hover {
+    color: white;
+    transition: 900ms;
+}
+
+/**=== OTHER PAGES ===**/
+
+.background2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.links2 {
+    font-size: 20px;
+    margin-left: 340px;
+}
+
+.links2 a {
+    color: var(--color-gray);
+    text-decoration: none;
+    position: relative;
+}
+
+.links2 a + a {
+    margin-left: 30px;
+}
+
+/* .links2 a.active {
+    color: var(--color-logo_yellow);
+} */
+
+.links2 a:hover {
+    color: var(--color-logo_yellow);
+    transition: 500ms;
+}
+
+.links2 a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-logo_yellow);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links2 a:hover::after {
+    width: 100%;
+    transition: width 700ms ease-in-out;
+}
+
+.footer-pages {
+    margin-top: 303px;
+}
+
+/**=== CERTIFICATE.HTML ===**/
+
+.languages {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.languages p {
+    margin-top: 10px;
+    margin-left: 150px;
+    color: var(--color-gray);
+}
